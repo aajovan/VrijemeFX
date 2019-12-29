@@ -1,6 +1,7 @@
-# VrijemeFX
-
-![ikona](src/3s.png)
+<div align="center">
+<h1>VrijemeFX</h1>
+ <img src="src/3s.png"/>
+</div>
 
 ## Info
 
