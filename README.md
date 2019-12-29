@@ -2,6 +2,9 @@
 
 ![ikona](src/3s.png)
 
-JavaFX 8 
-SceneBuilder
-Eclipse
+* JavaFX 8 
+* SceneBuilder
+* Eclipse
+* jsoup
+
+
