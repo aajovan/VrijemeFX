@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainFXMLController">
+   <children>
+      <BorderPane fx:id="split" prefHeight="800.0" prefWidth="1300.0">
+         <top>
+            <BorderPane fx:id="anchorpane" maxHeight="800.0" minHeight="251.0" prefHeight="330.0" prefWidth="1200.0" BorderPane.alignment="TOP_CENTER">
+               <top>
+                  <Label fx:id="label1" alignment="TOP_CENTER" contentDisplay="TOP" maxWidth="1600.0" prefHeight="281.0" prefWidth="1200.0" text="Datum" textAlignment="CENTER" textFill="WHITE" wrapText="true" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Microsoft YaHei UI Light" size="67.0" />
+                     </font>
+                     <graphic>
+                        <Label fx:id="label2" alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="202.0" prefWidth="130.0" text="stupnjevi" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Microsoft YaHei UI Light" size="30.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="topImg" fitHeight="111.0" fitWidth="120.0" pickOnBounds="true" />
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </Label>
+                     </graphic>
+                     <padding>
+                        <Insets top="-10.0" />
+                     </padding>
+                  </Label>
+               </top>
+               <bottom>
+                  <JFXHamburger fx:id="hamburger" alignment="BOTTOM_CENTER" prefHeight="38.0" prefWidth="1200.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </JFXHamburger>
+               </bottom>
+            </BorderPane>
+         </top>
+         <center>
+            <GridPane fx:id="mypane" alignment="CENTER" hgap="10.0" BorderPane.alignment="BOTTOM_CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="115.0" minHeight="50.0" percentHeight="20.0" prefHeight="100.0" valignment="CENTER" vgrow="NEVER" />
+                  <RowConstraints maxHeight="269.0" minHeight="235.0" percentHeight="80.0" prefHeight="250.0" valignment="CENTER" vgrow="NEVER" />
+                <RowConstraints percentHeight="20.0" vgrow="NEVER" />
+              </rowConstraints>
+            </GridPane>
+         </center>
+      </BorderPane>
+      <JFXDrawer fx:id="drawerTop" alignment="TOP_CENTER" defaultDrawerSize="50.0" direction="TOP" maxHeight="50.0" maxWidth="330.0" overLayVisible="false" StackPane.alignment="TOP_CENTER" />
+   </children>
+</StackPane>
